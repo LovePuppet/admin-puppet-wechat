@@ -1,0 +1,395 @@
+@media (max-width: 1020px) {
+	.screen {
+		width: 100%;
+	}
+
+	.arr {
+		display: none;
+	}
+	
+	/*s1*/
+	.banner-right {
+		width: 50%;
+		box-sizing:border-box;
+	}
+
+	.banner-right .big-logo {
+		width: 100%;
+	}
+
+	.banner-right .big-logo img {
+		/*width: 40px;*/
+	}
+
+	.banner .banner-right .big-logo .banner-title {
+		font-size: 1.5em;
+	}
+
+	.banner .banner-right .text {
+		font-size: 14px;
+		padding:0;
+	}
+
+	.banner .banner-right .download {
+		position: relative;
+		width: 100%;
+	}
+	
+	.banner .banner-right .download .erwm {
+		width: 60%;
+	}
+
+	.banner .banner-right .download .erwm img {
+		width: 100%;
+	}
+
+	.banner .banner-right .download .buttons {
+		width: 40%;
+		padding-left: 10px;
+		padding-top: 30px;
+
+		/*display: none;*/
+	}
+
+	.banner .banner-right .download .buttons .btn {
+		width: 100%;
+		/*line-height: 30px;*/
+		/*border:0;*/
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+
+	.banner .banner-right .download .buttons .wechat {
+		font-size: 12px;
+	}
+
+	.banner .banner-right .download .little-buttons {
+		/*display: block;*/
+		position: absolute;
+		top: 80px;
+		right: 20px;
+	}
+
+	.top .main .banner .banner-right .cloud1 {
+		display: none;
+	}
+
+	.top .main .banner .banner-phone {
+		width: 40%;
+		padding-top: 3%;
+		padding-left: 10%;
+		box-sizing:border-box;
+	}
+
+	#screen1Image {
+		width: 100%;
+		height: auto;
+		max-height: 553px;
+	}
+
+	.cloud2 {
+		display: none;
+	}
+
+	/*s2*/
+	.s2-left,.s3-left,.s3-right {
+		width: 50%;
+	} 
+
+	.screen .s2-left .s2-image,.screen .s3-right .s3-image {
+		width: 100%;
+	}
+
+	.screen .s2-left {
+		padding-top: 70px;
+	}
+
+	#screen2Image {
+		width: 100%;
+		height: auto;
+		max-height: 557px;
+	}
+
+	.screen .s2-right {
+		width: 50%;
+		padding-top: 0;
+	}
+
+	.s2-right .s2-content .s2-text {
+		width: 100%;
+	}
+
+	.s2-right .s2-content .s2-text .s2-title {
+		height: 120px;
+	}
+
+	.s2-right .screen-description {
+		width: 100%;
+	}
+
+	.s2-right .s2-content .arrow2 {
+		left:0;
+		top:350px;
+	}
+
+	/*s3*/
+	.s3-content .s3-text .s3-title {
+		width:100%;
+		height: 120px;
+	}
+
+	.s3-content .s3-text .screen-description,.s3-content .s3-text .desc-container {
+		width: 100%;
+		z-index: 2;
+	}
+
+	.screen .s3-right {
+		padding: 90px 0 0 50px;
+	}
+
+	.s3-right .s3-image .headset {
+		/*top:90px;*/
+		display: none;
+	} 
+
+	#screen3Image {
+		width:92%;
+		height: auto;
+		max-height: 557px;
+	}
+
+	/*s4*/
+	.s4-left,.s4-right {
+		width: 50%;
+	}
+
+	.s4-left {
+		padding: 70px 0 0 50px;
+	}
+
+	.s4-left .s4-image {
+		width: 100%;
+	}
+
+	#screen4Image {
+		width: 100%;
+		height: auto;
+	}
+
+	.s4-right .s4-content .s4-title {
+		width: 100%;
+		height: 120px;
+	}
+
+	.s4-right .s4-content .screen-description {
+		width: 100%;
+	}
+
+	.s4-right .s4-content .moyan {
+		top:400px;
+	}
+
+	.s4-right .s4-content .rao {
+		top:350px;
+		left:130px;
+	}
+
+	.s4-right .s4-content .yu {
+		left:30px;
+		top:450px;
+	}
+
+	/*s5*/
+	.s5-content,.s5-content .s5-text,.s5-content .s5-text .s5-title {
+		width: 100%;
+	}
+
+	.s5-content .s5-text .s5-title {
+		height: 90px;
+	}
+
+	.screen-s5 .s5-left {
+		width: 40%;
+	}
+
+	.s5-right {
+		width: 60%;
+	}
+
+	.screen-s5 .s5-right .s5-image {
+		width: 100%;
+		padding-left: 0;
+		padding-top: 70px;
+	}
+
+	#screen5Image {
+		width: 100%;
+		height: auto;
+	}
+        .puppet-logo{
+            width:55%;
+            height:10%;
+        }
+        .puppet-slogan{
+            width:50%;
+            height:4%;
+        }
+        .puppet-download-btn{
+            width:60%;
+            height:5%;
+        }
+}
+
+@media (max-width: 560px) {
+	.top .main .banner .banner-right {
+		width: 100%;
+	}
+
+	.top .main .banner .banner-phone {
+		display: none;
+	}
+
+	/*s2*/
+	.screen .s2-left {
+		padding-left: 3%;
+		padding-top: 130px;
+		width: 60%;
+	}
+	
+	.screen .s2-right {
+		width: 40%;
+		padding-left: 0;
+		padding-right: 2%;
+	}
+	.s2-right .s2-content .s2-text .s2-title {
+		height: 92px;
+	}
+
+	.screen .s2-right .s2-content .s2-title h2 {
+		font-size: 1.5em;
+	}
+
+	.s2-text .screen-description p {
+		font-size: 1em;
+	}
+
+	.book {
+		left:-30px;
+	}
+
+	.s2-right .s2-content .book1 {
+		overflow: hidden;
+	}
+
+	.s2-content {
+		width: 100%;
+	}
+
+	.s2-right .s2-content .book1 {
+		width: 100%;
+	}
+	
+	/*s3*/
+	.s3-content .s3-text .s3-title {
+		height: 92px;
+	}
+
+	.s3-content .s3-text .s3-title h2 {
+		font-size: 1.5em;
+	}
+	
+	.s3-content .s3-text .screen-description p {
+		font-size: 1em;
+	}
+
+	.screen-s3 .s3-left {
+		width: 40%;
+		padding-left: 3%;
+	} 
+
+	.screen .s3-right {
+		width: 60%;
+		padding-left: 3%;
+		padding-top: 130px;
+	}
+
+	/*s4*/
+	.screen-s4 .s4-left {
+		width: 60%;
+		padding-left: 3%;
+		padding-top: 130px;
+	}
+
+	.screen-s4 .s4-right {
+		width: 40%;
+		padding-right: 2%;
+	}
+
+	.s4-content .s4-text .s4-title {
+		height: 92px;
+	}
+
+	.s4-content .s4-text .s4-title h2 {
+		font-size: 1.5em;
+	}
+	
+	.s4-content .s4-text .screen-description p {
+		font-size: 1em;
+	}
+
+	.s4-right .s4-content .moyan {
+		/*top:450px;*/
+		top:60%;
+	}
+
+	.s4-right .s4-content .rao {
+		/*top:500px;*/
+		top:63%;
+		left:-240px;
+	}
+
+	.s4-right .s4-content .yu {
+		left:0px;
+		/*top:510px;*/
+		top:64%;
+	}
+
+	/*s5*/
+	.screen-s5 .s5-right {
+		width: 70%;
+		padding-left: 3%;
+		padding-top: 100px;
+	}
+
+	.screen-s5 .s5-left {
+		width: 30%;
+	}
+
+	.s5-content .s5-text {
+		padding-left: 3%;
+	}
+
+	.s5-content .s5-text .s5-title {
+		height: 62px;
+	}
+
+	.s5-content .s5-text .s5-title h2 {
+		font-size: 1.5em;
+	}
+	
+	.s5-content .s5-text .screen-description p {
+		font-size: 1em;
+	}
+        .puppet-logo{
+            width:55%;
+            height:10%;
+        }
+        .puppet-slogan{
+            width:50%;
+            height:4%;
+        }
+        .puppet-download-btn{
+            width:60%;
+            height:5%;
+        }
+}

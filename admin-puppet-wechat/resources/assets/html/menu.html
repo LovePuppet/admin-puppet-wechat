@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="http://wm.smallke.com/lib/css/index.css">
+  <style>
+    .mf-tabs--left {
+      position: relative;
+      padding-left: 120px;
+    }
+
+    .mf-tabs--left .mf-tabs__header.is-left {
+      float: none;
+      margin-right: 10px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mf-dialog__wrapper" style="z-index: 2028;">
+    <div class="mf-dialog" style="margin-top: 15vh;width:800px;">
+      <div class="mf-dialog__header">
+        <span class="mf-dialog__title">选择回复内容</span>
+        <button type="button" aria-label="Close" class="mf-dialog__headerbtn">
+          <i class="mf-dialog__close mf-icon mf-icon-close"></i>
+        </button>
+      </div>
+      <div class="mf-dialog__body">
+        <div class="mf-tabs mf-tabs--left">
+          <div class="mf-tabs__header is-left">
+            <div class="mf-tabs__nav-wrap is-left">
+              <div class="mf-tabs__nav-scroll">
+                <div role="tablist" class="mf-tabs__nav is-left" style="transform: translateY(0px);">
+                  <div class="mf-tabs__active-bar is-left" style="transform: translateY(0px); height: 40px;"></div>
+                  <div id="tab-0" aria-controls="pane-0" role="tab" tabindex="0" class="mf-tabs__item is-left is-active" aria-selected="true">文字</div>
+                  <div id="tab-1" aria-controls="pane-1" role="tab" tabindex="-1" class="mf-tabs__item is-left">图文消息</div>
+                  <div id="tab-2" aria-controls="pane-2" role="tab" tabindex="-1" class="mf-tabs__item is-left">图片</div>
+                  <div id="tab-3" aria-controls="pane-3" role="tab" tabindex="-1" class="mf-tabs__item is-left">跳转链接</div>
+                  <div id="tab-3" aria-controls="pane-3" role="tab" tabindex="-1" class="mf-tabs__item is-left">自定义key</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mf-tabs__content">
+            <div role="tabpanel" id="pane-0" aria-labelledby="tab-0" class="mf-tab-pane">
+              <div class="mf-form-item__content" style="margin-left: 10px;">
+                <div class="mf-textarea">
+                  <textarea class="mf-textarea__inner" style="min-height: 33px; margin-top: 0px; margin-bottom: 0px; height: 174px;" placeholder="请输入要输入的消息"></textarea>
+                </div>
+                <p>注:添加超链接的形式为:&lt;a href=" http://www.baidu.com"&gt;百度&lt;/a&gt;</p>
+              </div>
+            </div>
+            <div role="tabpanel" id="pane-1" aria-labelledby="tab-1" class="mf-tab-pane" aria-hidden="true">
+              <p>*请填写点击菜单跳转的链接地址</p>
+              <div class="mf-input mf-input-group mf-input-group--prepend">
+                <div class="mf-input-group__prepend">Http://</div>
+                <input type="text" autocomplete="off" placeholder="请输入内容" class="mf-input__inner">
+              </div>
+            </div>
+            <div role="tabpanel" id="pane-2" aria-labelledby="tab-2" class="mf-tab-pane" aria-hidden="true">
+              <style>
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                }
+
+                .asset-list {
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-content: flex-start;
+                  margin-top: 20px;
+                  list-style: none;
+                }
+
+                .item {
+                  position: relative;
+                  width: 280px;
+                  height: auto;
+                  cursor: pointer;
+                  margin: 0px 10px 20px;
+                }
+
+                .item .wrap {
+                  position: relative;
+                  border: 1px solid #ddd;
+                }
+
+                .item.active .wrap:before {
+                  content: "";
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 9;
+                  background-color: rgba(0, 0, 0, 0.4);
+                }
+
+                .item.active .wrap:after {
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  z-index: 10;
+                  transform: translate3d(-50%, -50%, 0);
+                  font-size: 40px;
+                  color: #409EFF;
+                  content: "\E62D";
+                  font-family: element-icons !important;
+                  speak: none;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-variant: normal;
+                  text-transform: none;
+                  line-height: 1;
+                  vertical-align: baseline;
+                  display: inline-block;
+                  -webkit-font-smoothing: antialiased;
+                }
+
+                .item .content {
+                  padding: 10px;
+                }
+
+                .content .avatar {
+                  position: relative;
+                  width: 100%;
+                  height: 150px;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                }
+
+                .content .avatar .title {
+                  position: absolute;
+                  left: 0px;
+                  bottom: 0px;
+                  width: 100%;
+                  padding: 10px;
+                  line-height: 1;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  color: #fff;
+                  background-color: rgba(0, 0, 0, 0.3);
+                }
+
+                .item .line {
+                  padding: 10px;
+                  border-top: 1px solid #ddd;
+                  height: 60px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                }
+
+                .item .line .txt {
+                  width: 200px;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+
+                .item .line .avatar {
+                  width: 40px;
+                  height: 40px;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                }
+              </style>
+              <!-- asset-list start -->
+              <ul class="asset-list">
+                <li class="item">
+                  <div class="wrap">
+                    <div class="content">
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/9d0ad0523967bc3e9787c9798720d040.jpg)">
+                        <p class="title">小米6X 全索尼相机，标配骁龙660 AIE处理器</p>
+                      </div>
+                    </div>
+                    <div class="line">
+                      <p class="txt">全索尼相机，标配骁龙660 AIE处理器</p>
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/649178edcbdca2e46c45f37aae8aae97.jpg)"></div>
+                    </div>
+                    <div class="line">
+                      <p class="txt">全索尼相机，标配骁龙660 AIE处理器</p>
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/649178edcbdca2e46c45f37aae8aae97.jpg)"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+
+                  <div class="wrap">
+                    <div class="content">
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/9d0ad0523967bc3e9787c9798720d040.jpg)">
+                        <p class="title">小米6X 全索尼相机，标配骁龙660 AIE处理器</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item active">
+
+                  <div class="wrap">
+                    <div class="content">
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/9d0ad0523967bc3e9787c9798720d040.jpg)">
+                        <p class="title">小米6X111 全索尼相机，标配骁龙660 AIE处理器</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item active">
+
+                  <div class="wrap">
+                    <div class="content">
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/9d0ad0523967bc3e9787c9798720d040.jpg)">
+                        <p class="title">小米6X 全索尼相机，标配骁龙660 AIE处理器</p>
+                      </div>
+                    </div>
+                    <div class="line">
+                      <p class="txt">全索尼相机，标配骁龙660 AIE处理器</p>
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/649178edcbdca2e46c45f37aae8aae97.jpg)"></div>
+                    </div>
+                    <div class="line">
+                      <p class="txt">全索尼相机，标配骁龙660 AIE处理器</p>
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/649178edcbdca2e46c45f37aae8aae97.jpg)"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item">
+
+                  <div class="wrap">
+                    <div class="content">
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/9d0ad0523967bc3e9787c9798720d040.jpg)">
+                        <p class="title">小米6X 全索尼相机，标配骁龙660 AIE处理器</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item active">
+
+                  <div class="wrap">
+                    <div class="content">
+                      <p>如果没有使用过类似Yii之类的框架，直接去看laravel，会有点一脸迷糊的感觉，起码我是这样的。laravel的启动过程，也是laravel的核心，对这个过程有一个了解，有助于得心应手的使用框架，希望能对大家有点帮助。
+                        提示：在此之前，最好看一下官方文档，大概知道laravel，再来看这个笔记，这样效果可能会好一点
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+
+                  <div class="wrap">
+                    <div class="content">
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/9d0ad0523967bc3e9787c9798720d040.jpg)">
+                        <p class="title">小米6X 全索尼相机，标配骁龙660 AIE处理器</p>
+                      </div>
+                    </div>
+                    <div class="line">
+                      <p class="txt">全索尼相机，标配骁龙660 AIE处理器</p>
+                      <div class="avatar" style="background-image: url(https://i8.mifile.cn/b2c-mimall-media/649178edcbdca2e46c45f37aae8aae97.jpg)"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- asset-list end -->
+              <div class="mf-pagination is-background">
+                <button type="button" disabled="disabled" class="btn-prev">
+                  <i class="mf-icon mf-icon-arrow-left"></i>
+                </button>
+                <ul class="mf-pager">
+                  <li class="number active">1</li>
+                  <li class="number">2</li>
+                  <li class="number">3</li>
+                  <li class="number">4</li>
+                  <li class="number">5</li>
+                  <li class="number">6</li>
+                  <li class="mf-icon more btn-quicknext mf-icon-more"></li>
+                  <li class="number">100</li>
+                </ul>
+                <button type="button" class="btn-next">
+                  <i class="mf-icon mf-icon-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mf-dialog__footer">
+        <div class="dialog-footer">
+          <button type="button" class="mf-button mf-button--default">
+            <!---->
+            <!---->
+            <span>取 消</span>
+          </button>
+          <button type="button" class="mf-button mf-button--primary">
+            <!---->
+            <!---->
+            <span>确 定</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v-modal" tabindex="0" style="z-index: 2027;"></div>
+</body>
+
+</html>

@@ -1,0 +1,614 @@
+@CHARSET "UTF-8";
+body, div, p, ul, li, span {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: STHeiti, "Microsoft YaHei";
+    -webkit-font-smoothing:antialiased;
+}
+
+
+
+a {
+	/*text-decoration: none;*/
+}
+
+.container {
+    width: 100%;
+}
+
+.screen {
+    width: 1020px;
+    margin: 0 auto;
+    min-height: 620px;
+    z-index: 2;
+    /*overflow: hidden;*/
+}
+
+/*s1*/
+.top {
+	/*height:620px;*/
+	width:100%;
+	position: relative;
+}
+
+.top .main .banner {
+	width: 100%;
+	overflow: hidden;
+	height: 569px;
+	padding-top: 40px;
+}
+
+.top .main .banner .banner-phone {
+	/*width: 308px;*/
+	padding-left: 64px;
+}
+
+#screen1Image {
+	height: 92%;
+}
+
+.top .main .banner .banner-phone,.top .main .banner .banner-right {
+	/*padding-top: 43px;*/
+	height: 601px;
+	float:left;
+}
+
+.top .main .banner .banner-phone {
+	width: 337px;
+}
+
+.top .main .banner .banner-right {
+	padding-left: 36px;
+	position: relative;
+}
+
+.top .main .banner .banner-right .cloud1 {
+	position: absolute;
+	z-index: 1;
+	top: 258px;
+	right: 0;
+	width: 53px;
+	height: 33px;
+	background: url(img/cloud1.png);
+}
+
+.banner .banner-right .big-logo {
+	padding-top: 43px;
+	height: 60px;
+}
+
+.banner .banner-right .big-logo img {
+	float: left;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 18px;
+}
+
+.banner .banner-right .big-logo .banner-title {
+	font-size: 42px;
+	color:#fff;
+	/*float: left;*/
+	padding: 6px 0 0 6px;
+}
+
+.banner .banner-right .text {
+	padding-top: 20px;
+	color: #ffd7d7;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.download a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.banner .banner-right .download {
+	color: #fff;
+	height: 287px;
+}
+
+.banner .banner-right .download .erwm {
+	float: left;
+	padding-top: 24px;
+	margin-left: -20px;
+	position: relative;
+}
+
+.banner .banner-right .download .erwm .arrow1 {
+	position: absolute;
+	width: 42px;
+	height: 79px;
+	left: -20px;
+	bottom:240px;
+	background: url(img/s1-arrow.png) 0 0 no-repeat;
+	background-size: cover;
+}
+
+
+.banner .banner-right .download .buttons {
+	padding-top: 30px;
+	padding-left: 60px;
+	float: left;
+}
+
+.banner .banner-right .download .little-buttons {
+	display: none;
+	float: left;
+}
+
+.banner .banner-right .download .buttons .btn {
+	font-size: 18px;
+	position: relative;
+	z-index: 2;
+	color: #000;
+	display: block;
+	width: 246px;
+	height: 48px;
+	background: #fff;
+	border:1px solid #000;
+	line-height: 48px;
+	text-align: center;
+	border-radius:38px;
+	margin-bottom:14px;
+}
+
+.banner .banner-right .download .buttons .btn span {
+	display: inline-block;
+	height: 100%;
+}
+
+.banner .banner-right .download .buttons .icon-wb,.banner .banner-right .download .buttons .icon-wc {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	margin-right: 12px;
+}
+
+.banner .banner-right .download .buttons .icon-wb {
+	width: 38px;
+}
+
+.banner .banner-right .download .buttons .icon-wc {
+
+}
+
+.bottom {
+	width: 100%;
+	height: 89px;
+	position: absolute;
+	bottom: 0;
+	background: url(img/s1cloud.png) center 0 no-repeat;
+}
+
+.cloud2 {
+	position: absolute;
+	z-index: 1;
+	width: 78px;
+	height: 60px;
+	top:100px;
+	right: 100px;
+	background: url(img/cloud2.png) 0 0 no-repeat;
+}
+
+/*s2*/
+.container-s2 {
+	background: #f2f2f2;
+}
+
+.screen-s2 {
+	position: relative;
+	background: #f2f2f2;
+}
+
+/*s2左边*/
+.screen .left-block,.screen .right-block {
+	float: left;
+	height: 100%;
+	box-sizing:border-box;
+}
+
+.screen .s2-left {
+	padding:50px 0 0 55px;
+}
+
+.screen .s2-left .s2-image{
+	width: 361px;
+}
+
+.screen .s2-left .s2-image,.screen .s2-right .s2-content {
+	height: 605px;
+}
+
+#screen2Image {
+	height: 92%;
+}
+
+/*s2右边*/
+.screen .s2-right {
+	padding:50px 0 0 10px;
+}
+
+.screen .s2-right .s2-content {
+	padding-top: 118px;
+	position: relative;
+}
+
+/*.screen .s2-right .s2-content .s2-text {
+	float: left;
+}*/
+
+.screen .s2-right .s2-content .s2-title {
+	height: 64px;
+}
+
+.screen .s2-right .s2-content .s2-title h2 {
+	color: #c94847;
+	font-size: 34px;
+	margin:0;
+	padding-bottom: 30px;
+}
+
+.s2-right .screen-description {
+	width: 548px;
+	height: 68px;
+}
+
+.s2-text .screen-description p {
+	color: #888;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.s2-text .screen-description a {
+	color: #888;
+}
+
+.s2-right .s2-content .book1 {
+	/*float: left;*/
+	padding-top: 68px;
+	width: 275px;
+	height: 133px;
+}
+
+.s2-right .s2-content .arrow2 {
+	width: 90px;
+	height: 48px;
+	position: absolute;
+	top: 291px;
+	left: 242px;
+	background:url(img/s2-arrow.png);
+}
+
+/*s3*/
+.container-s3 {
+	background: #5ba3eb;
+}
+
+.screen-s3 {
+	background: #5ba3eb;
+	overflow: hidden;
+}
+
+.screen .s3-right .s3-image,.screen .s3-left .s3-content {
+	height: 603px;
+}
+
+/*s3左边*/
+.screen-s3 .s3-left {
+	padding:50px 0 0 57px;
+}
+
+.screen-s3 .s3-left .s3-content {
+	padding-top: 125px;
+	position: relative;
+}
+
+.s3-content .s3-text .desc-container {
+	width: 455px;
+	height: 70px;
+	line-height: 30px;
+}
+
+.s3-content .s3-text .s3-title {
+	width: 455px;
+	height: 64px;
+}
+
+.s3-content .s3-text .screen-description {
+	width: 455px;
+	height: 70px;
+}
+
+.s3-content .s3-text .s3-title h2 {
+	color: #fff;
+	font-size: 34px;
+	margin:0;
+	padding-bottom: 30px;
+}
+
+.s3-content .s3-text .screen-description p {
+	font-size: 20px;
+	line-height: 26px;
+	color: #d1e8ff;
+}
+
+.s3-content .s3-text .screen-description p a {
+	color: #d1e8ff;
+}
+
+.s3-content .arrow3 {
+	position: absolute;
+	width: 90px;
+	height: 50px;
+	top: 281px;
+	left:263px;
+	background: url(img/s3-arrow.png) 0 0 no-repeat;
+}
+
+/*s3右边*/
+.screen .s3-right {
+	padding:76px 0 0 154px;
+}
+
+.screen .s3-right .s3-image {
+	width: 337px;
+}
+
+#screen3Image {
+	height: 92%;
+}
+
+.s3-right .s3-image .headset {
+	width: 322px;
+	position: absolute;
+	left:-248px;
+	top: 215px;
+}
+
+.s3-right .s3-image .wifi {
+	width: 79px;
+	position: absolute;
+	left:-79px;
+	top: -45px;
+}
+
+/*s4*/
+.container-s4 {
+	background: #f2f2f2;
+}
+
+.screen-s4 {
+	overflow: visible;
+	background: #f2f2f2;
+}
+
+.screen .s4-left .s4-image,.screen .s4-right .s4-content {
+	height: 605px;
+}
+
+/*s4左边*/
+.s4-left {
+	padding:50px 0 0 55px;
+}
+
+.s4-left .s4-image {
+	width: 364px;
+}
+
+#screen4Image {
+	height: 92%;
+}
+
+/*s4右边*/
+.screen-s4 .s4-right {
+	padding-top: 50px;
+}
+
+.screen-s4 .s4-right .s4-content {
+	padding-top: 116px;
+	position: relative;
+}
+
+.s4-right .s4-content .s4-title {
+	width: 485px;
+	height: 64px;
+}
+
+.s4-right .s4-content .s4-title h2 {
+	color: #c94847;
+	font-size: 34px;
+	margin:0;
+	padding-bottom: 30px;
+}
+
+.s4-right .s4-content .screen-description {
+	width: 490px;
+	height: 68px;
+}
+
+.screen-description p {
+	color: #888;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.screen-description p a {
+	color: #888;
+}
+
+.s4-right .s4-content .arrow4 {
+	width: 90px;
+	height: 48px;
+	position: absolute;
+	top:266px;
+	left:0;
+	background: url(img/s2-arrow.png);
+} 
+
+.s4-right .s4-content .moyan,.rao,.yu {
+	position: absolute;
+}
+
+.s4-right .s4-content .moyan {
+	width: 100px;
+	height: 100px;
+	top: 308px;
+	left: -106px;
+}
+
+.s4-right .s4-content .rao {
+	width: 100px;
+	height: 100px;
+	top: 400px;
+	left: 87px;
+}
+
+.s4-right .s4-content .yu {
+	width: 100px;
+	height: 100px;
+	top: 350px;
+	left: 330px;
+}
+
+/*s5*/
+.container-s5 {
+	background: #6ebe56;
+}
+
+.screen-s5 {
+	overflow: visible;
+	background: #6ebe56;
+	position: relative;
+}
+
+/*s5左边*/
+.screen-s5 .s5-left {
+	width: 433px;
+	padding:50px 0 0 12px;
+}
+
+.screen-s5 .s5-left .s5-content {
+	padding-top: 130px;
+	position: relative;
+}
+
+.s5-content .s5-text .s5-title {
+	height: 40px;
+	width: 433px;
+	padding-bottom: 30px;
+}
+
+.s5-content .s5-text .s5-title h2 {
+	margin:0;
+	color: #fff;
+	font-size: 34px;
+}
+
+.s5-content .s5-text .desc-container {
+    width: 100%;
+    height: 87px;
+}
+
+.s5-content .s5-text .screen-description p {
+    color: #e8fee1;
+}
+
+.s5-content .s5-text .screen-description a {
+    color: #e8fee1;
+}
+
+.s5-content .arrow5 {
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 310px;
+    left:263px;
+    background: url(img/s3-arrow.png) 0 0 no-repeat;
+}
+
+/*s5右边*/
+.screen-s5 .s5-right .s5-image {
+    padding:50px 0 0 33px;
+    width: 524px;
+    height: 600px;
+    overflow: hidden;
+}
+
+#screen5Image {
+    height: 90%;
+}
+
+.s5-content .s5-icon,.s5-content .s5-text {
+    float: left;
+}
+
+.s5-content .s5-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.s5-content .s5-text {
+    padding-left: 25px;
+}
+
+.book {
+    position: absolute;
+    bottom: 0;
+    right: 144px;
+    z-index: 1;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links p {
+    padding-top: 40px;
+    font-size: 14px;
+    color: #eee;
+}
+
+.footer-links p a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.footer-links p a:hover {
+    text-decoration: underline;
+}
+
+.sxzz,.copyright {
+    color: #89898b;
+    text-align: center;
+    font-size: 12px;
+}
+
+.sxzz {
+    padding:15px;
+}
+.copyright {
+    padding-left: 15px;
+}
+.puppet-logo{
+    width:28%;
+    height:9%;
+}
+.puppet-slogan{
+    width:24%;
+    height:4%;
+}
+.puppet-download-btn{
+    width:30%;
+    height:5%;
+}
+
